@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+.chat-container {
+    translate: 0px -60px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    flex: auto;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    height: 540px;
+}
+
+.chat-box .message {
+    margin-bottom: 10px;
+}
+
+.chat-box .message.user {
+    text-align: right;
+}
+
+#chat-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 60px);
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-button:active {
+    font-weight: 900;
+    font-size: 24px;
+    color: greenyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #b6bec6;
+}
+
+
+    body{
+        background: black;
+    }
+
+    header{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid skyblue;
+        border-radius: 10px 10px 0% 0%;
+        height: 40px;
+        color: blueviolet;
+        background-color: blanchedalmond;
+        font-size: 20px;
+        font-weight: 900;
+        font-family: monospace;
+        text-align: center;
+    }
+    @keyframes alt {
+        from{
+            
+        }
+        to{
+            
+        }
+    }
+    main{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid skyblue;
+        border-radius: 0% 0% 10px 10px;
+        height: 843px;
+        animation: alt .8s linear infinite;
+    }
+
+
+
+    h1{
+        translate: 0 -28px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Chat Online</h1>
+    </header>
+    <main>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button id="send-button">Send</button>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
